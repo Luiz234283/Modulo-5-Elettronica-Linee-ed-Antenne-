@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modulo 5 - Linee, Antenne e Telecomunicazioni. Corso di Elettronica ITIS">
+    <meta name="keywords" content="antenne, linee di trasmissione, telecomunicazioni, modulazione AM FM, elettromagnetismo">
+    <title>L'Invisibile in Rete: Linee e Antenne | Modulo 5 TLC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-icon">⚡</span>
+                <span class="logo-text">L'Invisibile in Rete</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#fisica" class="nav-link">Fisica</a>
+                <a href="#linee" class="nav-link">Linee</a>
+                <a href="#antenne" class="nav-link">Antenne</a>
+                <a href="#modulazioni" class="nav-link">Modulazioni</a>
+                <a href="#laboratorio" class="nav-link">Lab</a>
+            </nav>
+            <button class="menu-toggle" id="menuToggle">☰</button>
+        </div>
+    </header>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Dal Cavo di Rame allo Spazio Libero</h1>
+            <p class="hero-subtitle">Comprendi e domina le onde elettromagnetiche nel mondo interconnesso</p>
+            <div class="hero-stats">
+                <div class="stat-box">
+                    <div class="stat-number">80</div>
+                    <div class="stat-label">Ore di Corso</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Moduli Teorici</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-number">5</div>
+                    <div class="stat-label">Ore di Laboratorio</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fisica ed Elettromagnetismo -->
+    <section id="fisica" class="module-section">
+        <div class="container">
+            <h2 class="section-title">Fisica ed Elettromagnetismo</h2>
+            <p class="section-subtitle">Le fondamenta invisibili delle comunicazioni moderne</p>
+            <div class="content-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Le Forze Fondamentali</h3>
+                        <span class="badge">Base</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="concept-box">
+                            <h4>⚛️ Campo Elettrico</h4>
+                            <p>Generato da cariche statiche. È il risultato dell'interazione tra una carica sorgente e lo spazio circostante.</p>
+                        </div>
+                        <div class="concept-box">
+                            <h4>🧲 Campo Magnetico</h4>
+                            <p>Generato da cariche in moto. Una corrente crea un campo magnetico circostante che avvolge il conduttore.</p>
+                        </div>
+                        <div class="concept-box highlight">
+                            <h4>📡 Sintesi di Maxwell</h4>
+                            <p>I campi elettrico e magnetico sono concatenati e auto-sostenuti. Un campo variabile genera l'altro, creando un'onda che si propaga nello spazio.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Trigonometria Applicata</h3>
+                        <span class="badge">Matematica</span>
+                    </div>
+                    <div class="card-content">
+                        <p>La matematica dell'onda sinusoidale è il linguaggio universale delle telecomunicazioni.</p>
+                        <div class="formula-box">
+                            <p><strong>Seno e Coseno</strong></p>
+                            <p>Descrivono oscillazioni armoniche perfette. Il comportamento predetto coincide esattamente con la realtà fisica.</p>
+                        </div>
+                        <div class="formula-box">
+                            <p><strong>Fase Iniziale (φ₀)</strong></p>
+                            <p>Rappresenta il punto di partenza angolare dell'oscillazione. Determina la sincronizzazione tra due onde.</p>
+                        </div>
+                        <div class="formula-box">
+                            <p><strong>Frequenza (f)</strong></p>
+                            <p>Numero di cicli completi al secondo [Hz]. Definisce quanta energia trasporta l'onda.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Trasmissione dell'Onda</h3>
+                        <span class="badge">Propagazione</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="wave-diagram">
+                            <div class="diagram-label">Onda Elettromagnetica</div>
+                            <div class="diagram-visual">
+                                <div class="wave-indicator">E</div>
+                                <div class="wave-indicator-perpendicular">B</div>
+                                <div class="propagation-arrow">→ Propagazione</div>
+                            </div>
+                        </div>
+                        <div class="concept-list">
+                            <p><strong>✓ Ortogonalità</strong><br>I campi E e B sono perpendicolari tra loro.</p>
+                            <p><strong>✓ Avanzamento</strong><br>Propagazione trasversale rispetto all'oscillazione.</p>
+                            <p><strong>✓ Polarizzazione</strong><br>Orientamento definito dal vettore del campo elettrico (E).</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card full-width">
+                    <div class="card-header">
+                        <h3>Velocità Limite</h3>
+                        <span class="badge">Costante Universale</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="speed-display">
+                            <div class="speed-value">300.000 km/s</div>
+                            <p class="speed-description">Propagazione trasversale nel vuoto assoluto</p>
+                            <p class="speed-note">Questa velocità costante permea l'intero universo fisico ed è il limite insuperabile per qualsiasi segnale.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Linee di Trasmissione -->
+    <section id="linee" class="module-section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Linee di Trasmissione</h2>
+            <p class="section-subtitle">Trasporto controllato dell'energia dalla sorgente al carico</p>
+            <div class="content-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Trasporto Guidato</h3>
+                        <span class="badge">Fondamenti</span>
+                    </div>
+                    <div class="card-content">
+                        <p>La linea di trasmissione confina energeticamente il segnale in un percorso definito.</p>
+                        <div class="system-diagram">
+                            <div class="system-element source">Sorgente<br>Generatore di segnale</div>
+                            <div class="system-arrow">→</div>
+                            <div class="system-element medium">Mezzo<br>Conduttori paralleli</div>
+                            <div class="system-arrow">→</div>
+                            <div class="system-element load">Carico<br>Utilizzatore finale</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Tipologie di Linee</h3>
+                        <span class="badge">Geometrie</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="type-card">
+                            <h4>🔴 Coassiale</h4>
+                            <p>Alta immunità alle interferenze esterne grazie alla schermatura. Standard in RF e video.</p>
+                        </div>
+                        <div class="type-card">
+                            <h4>🟡 Bifilare</h4>
+                            <p>Impiego prevalente a basse frequenze. Semplice ma vulnerabile ai disturbi.</p>
+                        </div>
+                        <div class="type-card">
+                            <h4>🟢 Microstriscia</h4>
+                            <p>Integrazione diretta su circuiti stampati PCB. Ideale per applicazioni ad alta frequenza.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Impedenza Caratteristica</h3>
+                        <span class="badge">Z₀</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="highlight-text">Linea Ideale: Rapporto costante V/I indipendente dalla lunghezza</p>
+                        <div class="property-list">
+                            <div class="property">
+                                <span class="prop-label">Dipendenza</span>
+                                <span class="prop-value">Solo dalla geometria fisica</span>
+                            </div>
+                            <div class="property">
+                                <span class="prop-label">Resistenza</span>
+                                <span class="prop-value">Zero (assenza perdite ohmiche)</span>
+                            </div>
+                            <div class="property">
+                                <span class="prop-label">Conduttanza</span>
+                                <span class="prop-value">Nulla (dielettrico perfetto)</span>
+                            </div>
+                            <div class="property">
+                                <span class="prop-label">Attenuazione</span>
+                                <span class="prop-value">Segnale mantenuto all'infinito</span>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Onde Stazionarie</h3>
+                        <span class="badge">ROS</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Quando il carico non è adattato, parte dell'energia torna indietro verso il generatore.</p>
+                        <div class="wave-component">
+                            <div class="component-icon">↗️</div>
+                            <div class="component-text">
+                                <strong>V⁺</strong> - Onda Diretta<br>
+                                Energia verso il carico
+                            </div>
+                        </div>
+                        <div class="wave-component">
+                            <div class="component-icon">↖️</div>
+                            <div class="component-text">
+                                <strong>V⁻</strong> - Onda Riflessa<br>
+                                Energia respinta indietro
+                            </div>
+                        </div>
+                        <p class="metric-highlight"><strong>ROS</strong> = Rapporto d'Onda Stazionaria<br>Misura il disadattamento totale tra carico e linea</p>
+                    </div>
+                </article>
+                <article class="card full-width">
+                    <div class="card-header">
+                        <h3>Adattamento di Impedenza</h3>
+                        <span class="badge">Ottimizzazione</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="adaptation-box">
+                            <div class="adaptation-item">
+                                <div class="adaptation-icon">🎯</div>
+                                <div class="adaptation-text">
+                                    <strong>Obiettivo</strong><br>
+                                    Z<sub>carico</sub> = Z<sub>linea</sub>
+                                </div>
+                            </div>
+                            <div class="adaptation-item">
+                                <div class="adaptation-icon">✓</div>
+                                <div class="adaptation-text">
+                                    <strong>Risultato</strong><br>
+                                    Zero potenza riflessa
+                                </div>
+                            </div>
+                            <div class="adaptation-item">
+                                <div class="adaptation-icon">🔧</div>
+                                <div class="adaptation-text">
+                                    <strong>Strumento</strong><br>
+                                    Trasformatori a λ/4
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Antenne -->
+    <section id="antenne" class="module-section">
+        <div class="container">
+            <h2 class="section-title">Antenne</h2>
+            <p class="section-subtitle">Dal cavo allo spazio libero: il salto verso l'etere</p>
+            <div class="content-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Modelli Storici</h3>
+                        <span class="badge">Storia</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="history-item">
+                            <h4>⚡ Dipolo Hertziano</h4>
+                            <p><em>Heinrich Hertz, 1887</em></p>
+                            <p>Struttura simmetrica a mezz'onda (λ/2). Primo radiatore direttivo che ha confermato la teoria di Maxwell.</p>
+                        </div>
+                        <div class="history-item">
+                            <h4>📻 Antenna Marconiana</h4>
+                            <p><em>Guglielmo Marconi, 1895</em></p>
+                            <p>Quarto d'onda (λ/4) con specchio di terra. Ha rivoluzionato le comunicazioni wireless intercontinentali.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Antenne nel Quotidiano</h3>
+                        <span class="badge">Applicazioni</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="antenna-type">
+                            <span class="antenna-icon">📡</span>
+                            <strong>Pannelli Settoriali</strong><br>
+                            Copertura radiomobile urbana (4G, 5G)
+                        </div>
+                        <div class="antenna-type">
+                            <span class="antenna-icon">📶</span>
+                            <strong>Array Yagi-Uda</strong><br>
+                            Ricezione televisiva direttiva e punto-punto
+                        </div>
+                        <div class="antenna-type">
+                            <span class="antenna-icon">🛰️</span>
+                            <strong>Riflettori Parabolici</strong><br>
+                            Collegamenti satellitari puntiformi ad altissima direttività
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Principi Generali</h3>
+                        <span class="badge">Teoria</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="principle">
+                            <h4>🔄 Trasduzione</h4>
+                            <p>Transizione da onda guidata (linea) a onda libera (spazio).</p>
+                        </div>
+                        <div class="principle">
+                            <h4>↔️ Reversibilità</h4>
+                            <p>Il comportamento è identico in trasmissione e in ricezione. Un'antenna trasmittente teoricamente riceve allo stesso modo.</p>
+                        </div>
+                        <div class="principle">
+                            <h4>🎵 Risonanza</h4>
+                            <p>Massima efficienza a frequenze specifiche determinate dalla geometria (lunghezza d'onda λ).</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Polarizzazione</h3>
+                        <span class="badge">Allineamento</span>
+                    </div>
+                    <div class="card-content">
+                        <p><strong>Piano Operativo</strong>: Orientamento spaziale del campo elettrico (E).</p>
+                        <div class="polarization-box">
+                            <div class="pol-item">
+                                <div class="pol-icon">↕️</div>
+                                <p><strong>Verticale</strong><br>E oscilla verso l'alto-basso</p>
+                            </div>
+                            <div class="pol-item">
+                                <div class="pol-icon">↔️</div>
+                                <p><strong>Orizzontale</strong><br>E oscilla sinistra-destra</p>
+                            </div>
+                        </div>
+                        <p class="polarization-rule">⚠️ Regola d'Oro: Tx e Rx devono condividere lo stesso piano per massimizzare la cattura dell'energia.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Antenna Isotropica</h3>
+                        <span class="badge">Riferimento Teorico</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="isotropic-label">0 dBi = Riferimento Universale</p>
+                        <div class="isotropic-desc">
+                            <p><strong>Definizione</strong>: Sorgente puntiforme con irradiazione sferica identica in ogni direzione spaziale.</p>
+                            <p><strong>Realtà</strong>: Non esiste fisicamente, ma è il punto di paragone teorico per misurare tutti i guadagni reali.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Diagramma di Irradiazione</h3>
+                        <span class="badge">Geometria</span>
+                    </div>
+                    <div class="card-content">
+                        <p>La potenza irradiata non è uniforme in tutte le direzioni.</p>
+                        <div class="radiation-element">
+                            <div class="rad-icon">📊</div>
+                            <div class="rad-text">
+                                <strong>Lobo Principale</strong><br>
+                                Direzione di massima energia
+                            </div>
+                        </div>
+                        <div class="radiation-element">
+                            <div class="rad-icon">📉</div>
+                            <div class="rad-text">
+                                <strong>Lobi Secondari</strong><br>
+                                Dispersioni laterali indesiderate
+                            </div>
+                        </div>
+                        <div class="radiation-element">
+                            <div class="rad-icon">🔇</div>
+                            <div class="rad-text">
+                                <strong>Rapporto A/I</strong><br>
+                                Reiezione segnali posteriori
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Angolo di Apertura</h3>
+                        <span class="badge">-3 dB</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="beamwidth-box">
+                            <div class="beamwidth-metric">
+                                <div class="metric-label">-3 dB</div>
+                                <div class="metric-desc">Dimezzamento della potenza</div>
+                            </div>
+                            <div class="beamwidth-metric">
+                                <div class="metric-label">Δθ</div>
+                                <div class="metric-desc">Larghezza del fascio</div>
+                            </div>
+                        </div>
+                        <p>Quando la potenza irradiata scende al 50% del valore massimo, hai individuato il confine del fascio utile. Più stretto è il fascio, maggiore è la direttività.</p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Efficienza Radiante</h3>
+                        <span class="badge">Perdite</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="efficiency-metric">
+                            <h4>G = Guadagno</h4>
+                            <p>Direttività corretta per le perdite dissipative ohmiche.</p>
+                        </div>
+                        <div class="efficiency-metric">
+                            <h4>R<sub>rad</sub> = Resistenza Equivalente</h4>
+                            <p>Rappresenta ohmicamente la potenza irradiata (non dissipata come calore).</p>
+                        </div>
+                        <div class="efficiency-metric">
+                            <h4>η = Rendimento</h4>
+                            <p>Rapporto potenza irradiata su potenza totale accettata.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card full-width">
+                    <div class="card-header">
+                        <h3>EIRP - Potenza Apparente Massima</h3>
+                        <span class="badge">Normativa</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="eirp-definition">
+                            <p class="eirp-title">Equivalent Isotropically Radiated Power</p>
+                            <p class="eirp-meaning">Potenza necessaria a un'antenna isotropica per eguagliare il segnale nella direzione di massimo guadagno.</p>
+                            <p class="eirp-note">Metrica standard in normative internazionali (FCC, ETSI). Determina i limiti di potenza per non interferire con altri sistemi.</p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Modulazioni -->
+    <section id="modulazioni" class="module-section alt-bg">
+        <div class="container">
+            <h2 class="section-title">Modulazioni AM/FM e Trasmissione</h2>
+            <p class="section-subtitle">Imprimi l'informazione sulle onde e estraila alla ricezione</p>
+            <div class="content-grid">
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Sistema di Comunicazione Completo</h3>
+                        <span class="badge">Architettura</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Una catena di comunicazione comprende trasmettitore, mezzo di propagazione, ricevitore e post-elaborazione del segnale.</p>
+                        <div class="system-flow">
+                            <div class="flow-block">Sorgente Audio</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-block">Modulatore</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-block">Antenna TX</div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="flow-block-span">Spazio Libero / Canale</div>
+                            <div class="flow-arrow">↓</div>
+                            <div class="flow-block">Antenna RX</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-block">Demodulatore</div>
+                            <div class="flow-arrow">→</div>
+                            <div class="flow-block">Audio Output</div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Caratterizzazione del Canale</h3>
+                        <span class="badge">H(f)</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Ogni mezzo di trasmissione (cavo, aria, spazio libero) modifica il segnale in modo dipendente dalla frequenza.</p>
+                        <div class="channel-box">
+                            <p><strong>H(f) = Funzione di Risposta in Frequenza</strong></p>
+                            <p class="channel-param">|H(f)| = Modulo (Amplificazione/attenuazione a ogni frequenza)</p>
+                            <p class="channel-param">φ(f) = Fase (Sfasamento introdotto da componenti reattive)</p>
+                        </div>
+                        <p><em>Il canale è modellato come un quadrupolo lineare tempo-invariante (LTI).</em></p>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Qualità della Trasmissione</h3>
+                        <span class="badge">Non Distorsione</span>
+                    </div>
+                    <div class="card-content">
+                        <p class="quality-rule">s<sub>u</sub>(t) = G · s<sub>i</sub>(t - τ<sub>r</sub>)</p>
+                        <p>Il segnale in uscita è una copia esatta dell'ingresso, replicato solo da scala G e ritardo τ<sub>r</sub>.</p>
+                        <div class="condition-list">
+                            <div class="condition">
+                                <strong>1. Modulo Costante</strong><br>
+                                |H(f)| = G nell'intera banda del segnale
+                            </div>
+                            <div class="condition">
+                                <strong>2. Fase Lineare</strong><br>
+                                φ(f) = -2π f τ<sub>r</sub> proporzionale a f
+                            </div>
+                            <div class="condition">
+                                <strong>3. Ritardo di Gruppo Costante</strong><br>
+                                τ<sub>g</sub>(f) invariante per tutte le componenti spettrali
+                            </div>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Tipologie di Distorsione</h3>
+                        <span class="badge">Degradazione</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="distortion-type">
+                            <h4>⚠️ Distorsione di Ampiezza</h4>
+                            <p>|H(f)| non costante nella banda passante. Frequenze diverse subiscono guadagni differenti → segnale deformato.</p>
+                        </div>
+                        <div class="distortion-type">
+                            <h4>⚠️ Distorsione di Fase/Ritardo</h4>
+                            <p>Fase non lineare. Frequenze diverse arrivano con ritardi sfalsati → interferenza intersimbolica.</p>
+                        </div>
+                        <div class="distortion-type">
+                            <h4>⚠️ Distorsione Non Lineare</h4>
+                            <p>Componenti attive in saturazione. Generano nuove armoniche non presenti nell'ingresso → intermodulazione.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Modulazione AM</h3>
+                        <span class="badge">Amplitude Modulation</span>
+                    </div>
+                    <div class="card-content">
+                        <div class="modulation-visual">
+                            <p>L'ampiezza della portante RF segue il segnale audio.</p>
+                            <div class="mod-property">
+                                <strong>Inviluppo</strong><br>
+                                Ampiezza della portante varia col segnale baseband
+                            </div>
+                            <div class="mod-property">
+                                <strong>Banda</strong><br>
+                                Doppia banda laterale (DSB): 2 × B<sub>segnale</sub>
+                            </div>
+                        </div>
+                        <div class="am-con">
+                            <p><strong>⚠️ Vulnerabilità:</strong> Rumore impulsivo (fulmini, motori) altera l'ampiezza direttamente.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Modulazione FM</h3>
+                        <span class="badge">Frequency Modulation</span>
+                    </div>
+                    <div class="card-content">
+                        <p>La frequenza della portante RF varia col segnale audio.</p>
+                        <div class="mod-property">
+                            <strong>Deviazione (Δf)</strong><br>
+                            Frequenza portante si discosta dal valore centrale
+                        </div>
+                        <div class="mod-property">
+                            <strong>Ampiezza</strong><br>
+                            Costante, insensibile al fading
+                        </div>
+                        <div class="fm-pro">
+                            <p><strong>✓ Immunità:</strong> Altissima reiezione disturbi atmosferici e rumori impulsivi.</p>
+                            <p><strong>✓ Qualità Audio:</strong> Rapporto S/N eccellente. Usato in FM radio commerciale 88-108 MHz.</p>
+                        </div>
+                    </div>
+                </article>
+                <article class="card">
+                    <div class="card-header">
+                        <h3>Demodulazione AM</h3>
+                        <span class="badge">Ricezione</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Estrai il segnale audio da un'onda AM usando il circuito rivelatore di picco.</p>
+                        <div class="demod-circuit">
+                            <div class="component">
+                                <strong>1. Diodo</strong><br>
+                                Rettificazione semionda segnale RF
+                            </div>
+                            <div class="component">
+                                <strong>2. Condensatore</strong><br>
+                                Filtro passa-basso per l'inviluppo
+                            </div>
+                            <div class="component">
+                                <strong>3. Resistore</strong><br>
+                                Adattamento d'impedenza
+                            </div>
+                        </div>
+                        <p><em>Semplicissimo, ma efficace per frequenze fino a pochi MHz.</em></p>
+                    </div>
+                </article>
+                <article class="card full-width">
+                    <div class="card-header">
+                        <h3>Demodulazione FM</h3>
+                        <span class="badge">Sincronia di Fase</span>
+                    </div>
+                    <div class="card-content">
+                        <p>Recupera il segnale audio usando un anello ad aggancio di fase (Phase-Locked Loop, PLL).</p>
+                        <div class="pll-diagram">
+                            <div class="pll-block">
+                                <strong>Comparatore di Fase</strong><br>
+                                Misura differenza di fase tra ingresso e VCO
+                            </div>
+                            <div class="pll-arrow">↓</div>
+                            <div class="pll-block">
+                                <strong>Filtro Passa-Basso</strong><br>
+                                Estrae segnale audio da errore di fase
+                            </div>
+                            <div class="pll-arrow">↓</div>
+                            <div class="pll-block">
+                                <strong>VCO (Voltage Controlled Oscillator)</strong><br>
+                                Oscillatore sincronizzato al segnale ricevuto
+                            </div>
+                        </div>
+                        <p>Il loop si "aggancia" automaticamente alla frequenza trasmessa, inseguendola costantemente.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Laboratorio -->
+    <section id="laboratorio" class="module-section">
+        <div class="container">
+            <h2 class="section-title">Laboratorio di Ricerca</h2>
+            <p class="section-subtitle">5 ore di attività pratica hands-on</p>
+            <div class="lab-grid">
+                <article class="lab-card">
+                    <div class="lab-icon">🗺️</div>
+                    <h3>Mappatura Reti 5G</h3>
+                    <p><strong>Obiettivo:</strong> Analizzare il posizionamento geografico e lo spettro delle torri 5G nella città.</p>
+                    <ul class="task-list">
+                        <li>Ricerca online di siti 5G locali</li>
+                        <li>Mapping su mappa stradale</li>
+                        <li>Calcolo di copertura teorica</li>
+                        <li>Verifica sul campo con app di rilevamento segnale</li>
+                    </ul>
+                </article>
+                <article class="lab-card">
+                    <div class="lab-icon">📊</div>
+                    <h3>Analisi dello Spettro</h3>
+                    <p><strong>Obiettivo:</strong> Identificare interferenze sui canali Wi-Fi locali usando strumenti software.</p>
+                    <ul class="task-list">
+                        <li>Download di app analizzatore Wi-Fi</li>
+                        <li>Scansione frequenze 2.4 GHz e 5 GHz</li>
+                        <li>Riconoscimento conflitti di canale</li>
+                        <li>Ottimizzazione router domestico</li>
+                    </ul>
+                </article>
+                <article class="lab-card">
+                    <div class="lab-icon">📡</div>
+                    <h3>SDR Pratico (Software Defined Radio)</h3>
+                    <p><strong>Obiettivo:</strong> Decodificare segnali radio aperti tramite ricevitore USB generico e software libero.</p>
+                    <ul class="task-list">
+                        <li>Installazione SDR# o GQRX su PC</li>
+                        <li>Ricezione FM radio commerciale</li>
+                        <li>Ascolto comunicazioni aeronautiche</li>
+                        <li>Decoding segnali meteo e satelliti</li>
+                    </ul>
+                </article>
+                <article class="lab-card">
+                    <div class="lab-icon">🛠️</div>
+                    <h3>Costruzione Antenna Yagi</h3>
+                    <p><strong>Obiettivo:</strong> Progettare e costruire un'antenna direttiva fai-da-te per ricevere Wi-Fi da distanza.</p>
+                    <ul class="task-list">
+                        <li>Calcolo delle dimensioni geometriche</li>
+                        <li>Assemblaggio con filo di rame rigido</li>
+                        <li>Test di ricezione su varie angolazioni</li>
+                        <li>Misura relativa del guadagno con app mobile</li>
+                    </ul>
+                </article>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Modulo 5 TLC</h4>
+                    <p>Corso di Elettronica per studenti di quinta ITIS</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Riferimenti</h4>
+                    <ul>
+                        <li>Manuale di Telecomunicazioni per Istituti Tecnici (Vol. 2)</li>
+                        <li>Standard IEEE su irradiazione e sicurezza RF</li>
+                        <li>Normative ETSI e FCC</li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Nota Didattica</h4>
+                    <p>Questo sito presenta i concetti chiave del Modulo 5 in forma divulgativa ma rigorosa. Approfondisci con i testi scolastici e le esercitazioni di laboratorio.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 L'Invisibile in Rete. Costruito per studenti di Elettronica ITIS.</p>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.querySelector('.nav-menu');
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+        });
+        // Smooth scroll navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    navMenu.classList.remove('active');
+                    menuToggle.classList.remove('active');
+                    // Update active nav link
+                    document.querySelectorAll('.nav-link').forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    this.classList.add('active');
+                }
+            });
+        });
+        // Intersection Observer for nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const observerOptions = {
+            threshold: 0.3
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.getAttribute('id');
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === `#${id}`) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+        sections.forEach(section => observer.observe(section));
+    </script>
+</body>
+</html>
